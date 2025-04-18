@@ -1,0 +1,36 @@
+[project]
+name = "packaging-tutorial"
+description = ""
+authors = [
+    {name = "Yngve Mardal Moe"},
+    {name = "Marie Roald"},
+]
+dependencies = [
+    "httpx>=0.28.1",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+dynamic = ["version"]
+
+[project.optional-dependencies]
+rich = [
+    "rich>=14.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.5",
+    "pytest>=8.3.5",
+    "pyright>=1.1.399",
+]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff.lint]
+select = ["I"]
+
+[tool.setuptools_scm]
+root = "../../.."
