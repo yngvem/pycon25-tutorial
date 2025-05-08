@@ -31,6 +31,9 @@ They assume that you are sort of familiar with Python and that you are somewhat 
 
 Also you should know how to use a code editor like VSCode, PyCharm or Sublime Text.
 
+> [!NOTE]
+> If you cannot install uv on your machine, then you can fork our [base project repo](https://github.com/yngvem/pycon25-tutorial-project), which as a devcontainer with uv installed.
+
 ## Next
 [Introduction (uv)](uv/tutorial/01-introduction/01-workshop-introduction.md) or [Introduction (pdm)](pdm/tutorial/01-introduction/01-workshop-introduction.md)
 
