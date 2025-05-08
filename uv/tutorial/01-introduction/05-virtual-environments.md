@@ -18,7 +18,7 @@ However, you don't need to worry about that at all, because uv takes care of cre
 
 1. Run `python -c "import sys; print(sys.executable)"` in a terminal emulator (cmd or powershell) to see which Python executable Windows uses by default (the first result).
 2. Run `uv run python -c "import sys; print(sys.executable)"` to see which Python executable uv uses by default in your project. Is there any difference?
-3. Activate the virtual environment by running `.venv\Scripts\activate` (Windows) or `.venv\bin\activate` (Linux/Mac OS)
+3. Activate the virtual environment by running `.venv\Scripts\activate` (Windows) or `source .venv/bin/activate` (Linux/Mac OS)
 4. Run `python -c "import sys; print(sys.executable)"` to see which Python executable Windows now uses by default
 5. Deactivate the virtual environment by running `deactivate`
 6. Run `python -c "import sys; print(sys.executable)"` to see which Python executable Windows now uses by default
