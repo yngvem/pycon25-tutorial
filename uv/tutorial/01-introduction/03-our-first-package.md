@@ -21,7 +21,7 @@ If you want a comparison of the different tools for packaging in Python, then we
 5. What are the dependencies of your package?
 6. Discuss with your neighbour: what do you think the purpose of the `__init__.py`-file in the `src/{PACKAGE_NAME}`-directory is?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 

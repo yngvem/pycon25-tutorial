@@ -27,7 +27,7 @@ So, an obvious question is: what are these *wheel files*? What's in them?
 4. Unzip the file and inspect the contents. Discuss what you believe they are with your neighbour
 5. Compare the contents of the unzipped wheel file with the [urllib3 source code](https://github.com/urllib3/urllib3). Are there any similarities?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 

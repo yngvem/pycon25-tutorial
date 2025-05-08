@@ -11,7 +11,7 @@ If you haven't updated PDM since then, then you can still use development depend
 3. Delete the lines related to the `dev` optional dependencies, but NOT the development dependency group and run `pdm install` again. Did anything change in your environment?
 4. Discuss with your neighbour: When do you think you should use development dependencies, and when do you think you should use optional dependencies?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 We have now added development dependencies to our code.
@@ -34,7 +34,7 @@ This table summarises when to use the different types of dependencies.
 3. Run pytest again, this time with the command `pdm run pytest --cov src`. What happened?
 4. What do you think happens if you run `pdm run pytest --randomly-seed=last`?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 Now that we know how to specify development dependencies, we have added a couple of extra very useful pytest plugins as development dependencies: `pytest-cov` and `pytest-randomly`.

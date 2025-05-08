@@ -9,7 +9,7 @@ Specifically, we'll add a Python module that fetches the PyCon US programme, par
 2. Run the command `uv sync` in the same terminal window you used to run `uv init --lib`. You should get a few lines of output, among them the line `Creating virtual environment at: .venv`.
 3. Run the file you created by typing `uv run python src/{{package_name}}/pycon.py` in your terminal emulator (replace `{{package name}}` with the name of your package). What happened?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 
@@ -25,7 +25,7 @@ However, uv has a handy way to add dependencies and install them simultaneously:
 2. Open the `pyproject.toml` file. Can you find httpx anywhere in that file?
 3. Try to run the `pycon.py` file again
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 When you ran `uv add httpx`, three things happened: uv checked if you could add HTTPX as a dependency, then it updated the `pyproject.toml` file before it installed HTTPX in the virtual environment for your project.
@@ -38,7 +38,7 @@ Before we move on, we can make a little script to check if we can install our li
 1. Create a new folder in your project root (i.e. outside of `src`) called `scripts`, and create a new file `get_charlas.py` into it. Copy the contents of [`code/packaging-tutorial/get_charlas.py`](../../code/packaging-tutorial/scripts/get_charlas.py) into it (you may need to modify the `import packaging_tutorial.pycon`-import, replacing `packaging_tutorial` with the name of the directory inside `src`) and run it. What did it do?
 2. Discuss with your neighbour: why do you think the import in the `get_charlas.py`-script worked?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 
 ## Reflection
@@ -55,7 +55,7 @@ Now that we have tested that we can import our code, we are ready to add a coupl
 2. Replace the code in your `pycon.py`-file with the code from the [`code/packaging-tutorial/src/packaging_tutorial/validated_pycon.py`](../../code/packaging-tutorial/src/packaging_tutorial/validated_pycon.py) file from this repository and run the code with `uv run --no-sync python scripts/get_charlas.py`. What happened, and why did this happen?
 3. Try again, but this time by running `uv run python scripts/get_charlas.py`. What happened now? 
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 So we see that we can add dependencies to the `pyproject.toml` file manually, which is very useful when we want to set up a template for others to use.
@@ -80,7 +80,7 @@ Note that uv will try to add the latest version of a given dependency that is co
   * `"pydantic<2"`
   * `"pydantic-settings>=1"`
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 As you may have noticed, uv took a little bit longer this time, before failing with the message
@@ -112,7 +112,7 @@ Luckily though, we don't rely on any outdated Pydantic features, so we can upgra
 2. Replace the code in your `pycon.py`-file with the code from the [`code/packaging-tutorial/src/packaging_tutorial/validated_pycon_with_config.py`](../../code/packaging-tutorial/src/packaging_tutorial/validated_pycon_with_config.py). How does this file differ from the original `pycon.py`-file?
 3. Test that the code works by running the `get_charlas`-script with `uv run python scripts/get_charlas.py`
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 

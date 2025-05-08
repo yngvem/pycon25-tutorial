@@ -36,7 +36,7 @@ Still, we will need some tests to get through the entire packaging process.
 3. Add pytest as a dependency to your project using whichever method you prefer.
 4. Run pytest by running `pdm run pytest`.
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 We have now added our first test to our package.

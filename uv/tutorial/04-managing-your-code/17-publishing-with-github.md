@@ -46,7 +46,7 @@ jobs:
 5. Open `src/{package_name}/__init__.py` and add the line `__version__ = "0.2.0"`. Then, open the `pyproject.toml`-file and update the version number to "0.2.0" as well. Commit and push these changes. 
 6. In the GitHub repository: press the "Make a release button" (or "Draft a release" if you've already made one) on the right-hand side of your project's front page and make a release with the tag `v0.2.0`. Check if your CD-pipeline runs.
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 
@@ -80,7 +80,7 @@ build-backend = "setuptools.build_meta"
 8. Push the tag to GitHub with `git push origin tag v0.3.0`. Go to GitHub and create a release with this tag.
 9. Check if the CD-pipeline runs. Once it has succeeded, check `test.pypi.org` to see if you can find the latest version of your code.
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 
@@ -102,7 +102,7 @@ To avoid this, we can use a GitHub Actions security scanner tool named "[Zizmor]
 3. Add the [Zizmor pre-commit hook](https://github.com/woodruffw/zizmor-pre-commit) to `pre-commit-config.yaml`
 4. Add Zizmor to your CI-workflow.
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 

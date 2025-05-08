@@ -38,7 +38,7 @@ jobs:
 1. What is the difference between `run`-steps and `uses`-steps?
 1. Commit the file and push to GitHub. Open the GitHub repository in your browser and have a look at the `Actions` tab. Do you see a job? If so, press it and have a look at its log. Can you tell what happens?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 We have now set up a very simple CI job where the unit tests are run automatically every time someone pushes to GitHub and every time someone opens or make changes to a PR.
@@ -59,7 +59,7 @@ We'll look a bit more at that later, but first, let's improve our CI pipeline a 
 3. Update the pipeline so it also runs with multiple Python versions (e.g. '3.11', '3.12', and '3.13'). If you're stuck, then you can check out the [GitHub Actions docs](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/running-variations-of-jobs-in-a-workflow). Commit and push the code to see if you succeeded.
 4. Add a new step before the unit tests are run where you run the command `pdm run ruff check . && pdm run ruff format --check .`. Commit and push the code to see if you succeeded. What do you think this command does?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 
@@ -75,7 +75,7 @@ We're running arbitrary code from other repositories in our CI-CD pipeline!
 1. Visit https://github.com/pdm-project/setup-pdm/tree/v4 and press the commit hash link (it should be a string of seven numbers and letters (a-f) below the <kbd>\<\> Code</kbd> button). Copy the hash from the URL you just visited (the URL should have the following format: https://github.com/{user/org}/{repo}/commit/{hash}). It should be a long string of seemingly random letters and numbers (e.g. `deb8d8a4e2a03aabcef6f2cc981923fc6b29ef99`). 
 1. Update the `uses: pdm-project/setup-pdm@v4`-line so it says `uses: pdm-project/setup-pdm@deb8d8a4e2a03aabcef6f2cc981923fc6b29ef99`. Discuss with your neighbour: Why should you do this with your CI-pipelines? And is there any considerations regarding when you should pin based on the Git hash?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 

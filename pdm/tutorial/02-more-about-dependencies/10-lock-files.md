@@ -9,7 +9,7 @@ The task of finding compatible set of dependencies, given the project requiremen
 3. Run `pdm export -o requirements.txt` and inspect the contents of the `requirements.txt`. What do you think it contains?
 4. Delete the `requirements.txt`-file
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 When you add dependencies to your project, you also need to install your dependencies' dependencies.
@@ -24,7 +24,7 @@ Still, it's useful to be aware that a `requirements.txt`-file can function as an
 ## Exercises
 1. Run `pdm list --tree` and inspect the terminal output. What does this represent?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 While the lock file is useful for keeping a record of the dependencies, it is not meant for human consumption.

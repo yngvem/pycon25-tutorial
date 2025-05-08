@@ -14,7 +14,7 @@ While package extras are meant to add optional dependencies to your projects, th
 5. Run the `get_charlas.py` script again to check that you got the nice colours back.
 6. When do you think it makes sense to use optional dependencies?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 We have now added `rich` as an optional dependency to our package.

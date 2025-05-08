@@ -11,7 +11,7 @@ The reason we use GitHub here is that it's the most popular tool with ready-buil
 1. Push your changes to GitHub by running `git push --set-upstream origin main`.
 1. Open your repository on GitHub and validate that your updates are there.
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 

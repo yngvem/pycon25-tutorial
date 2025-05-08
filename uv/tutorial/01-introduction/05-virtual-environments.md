@@ -24,7 +24,7 @@ However, you don't need to worry about that at all, because uv takes care of cre
 6. Run `python -c "import sys; print(sys.executable)"` to see which Python executable Windows now uses by default
 7. Discuss with your neighbour: What are the benefits of using a different virtual environment for each project compared to using just one large environment for everything?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 

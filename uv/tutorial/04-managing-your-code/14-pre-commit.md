@@ -17,7 +17,7 @@ Luckily, this is possible, and the main tool for running commands that verify yo
 1. Open a file, and add a new line with a comment and a blank space at the end of it. Save the file, stage it, and try to commit it. What happened?
 1. Stage the file again and commit it. Discuss with your neighbour: what do you think just happened?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 Pre-commit is an amazing tool.
@@ -56,7 +56,7 @@ def print_future_sessions() -> None:
 6. Stage and commit the updated `pycon.py`-file. Did it pass the pre-commit hooks?
 7. Stage the fixed file and commit again
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 
 ## Reflection

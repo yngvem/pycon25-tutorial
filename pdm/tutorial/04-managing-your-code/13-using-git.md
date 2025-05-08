@@ -21,7 +21,7 @@ For a more thorough introduction to git, we refer to the excellent [Introduction
 1. *Commit* the changes by running `git commit -m "Initial commit"`
 1. Check that the files are committed by running `git log` followed by `git status`. What do you think these commands do?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 
@@ -39,7 +39,7 @@ Then, if you ever want to see old versions of your files, you can write `git log
 1. *Commit* the file by running `git commit` and write a descriptive message.
 1. Have a look at the updated git log by running `git log`.
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 You have now updated your file and committed the changes.

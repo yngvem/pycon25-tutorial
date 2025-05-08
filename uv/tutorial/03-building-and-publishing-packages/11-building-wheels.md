@@ -16,7 +16,7 @@ A build backend is essentially a piece of code that follows a specification call
 5. Inspect the `dist/sdist` and `dist/wheel` directories. Are there any differences? If so, what are they?
 6. Open the `.venv/lib/python3.12/site-packages` (Linux and Mac) or the `.venv/Lib/site-packages` (Windows) directory. Compare the folder names in this directory to the folder names in the extracted of the wheel and source distribution. Can you see any similarities?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 
@@ -37,7 +37,7 @@ This means that it's much easier to install wheels than source distributions, an
 1. Let's change the build backend. Open the `pyproject.toml`-file and modify the `[build-system]` to use `setuptools` instead of Hatchling. Specifically, modify it so it says `requires = ["setuptools"]` and `build-backend = "setuptools.build_meta"` (Note: Setuptools isn't better than Hatchling, just different. So unless you have some specific advanced requirements, we recommend just sticking to the defaults here, but you should still know how to do it). 
 2. Build the project again. What do you think was different this time around?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 

@@ -15,7 +15,7 @@ In this part of the tutorial, we'll upload our package to a package repository n
 1. Navigate to https://test.pypi.org/simple and see if you find your package. What do you think this "simple view" is used for?
 1. Navigate to https://test.pypi.org/simple/{your-package-name}/, what do you see here?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 By now, you have created a user at a package registry and pushed code there that anyone can install.

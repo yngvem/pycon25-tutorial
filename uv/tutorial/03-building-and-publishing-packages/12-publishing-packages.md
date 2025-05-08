@@ -15,7 +15,7 @@ In this part of the tutorial, we'll upload our package to a package repository n
 1. Navigate to https://test.pypi.org/simple and see if you find your package. What do you think this "simple view" is used for?
 1. Navigate to https://test.pypi.org/simple/{your-package-name}/, what do you see here?
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 By now, you have created a user at a package registry and pushed code there that anyone can install.
@@ -27,7 +27,7 @@ If you're interested in the specifics of PyPI and how it's built up, then you ca
 ## Exercise (Optional)
 1. Use what you've learned so far to set up one of your own project to use uv.
 
-<img src="../../../assets/post_it_yellow.svg" alt="Illustraiton of a pink post it note" width="50px" />
+<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Next up
 [Using git to keep track of our code](../04-managing-your-code/13-using-git.md)
