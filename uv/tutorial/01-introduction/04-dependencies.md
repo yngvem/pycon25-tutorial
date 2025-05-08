@@ -68,7 +68,7 @@ It's a one-step process that ensures that you get a compatible set of dependenci
 Note that uv will try to add the latest version of a given dependency that is compatible with the rest of your dependencies, which means that the order in which you add dependencies can matter (but 99% of the time, it won't matter).
 
 ## Next up
-[Virtual environments](./05-virtual-environments.md)
+[Virtual environments](./05-virtual-environments.md), or, if you want to look at the bonus reading: [runnable scripts](./0x-bonus-scripts.md).
 
 # Optional reading: Dependency compatibility
 
