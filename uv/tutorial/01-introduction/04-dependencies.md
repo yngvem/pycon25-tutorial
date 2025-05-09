@@ -6,7 +6,7 @@ Specifically, we'll add a Python module that fetches the PyCon US programme, par
 
 ## Exercises
 1. Create a file `pycon.py` in the `src/{{package name}}` directory (replace `package name` with the name of your package) and copy the contents of [`code/packaging-tutorial/src/packaging_tutorial/pycon.py`](../../code/packaging-tutorial/src/packaging_tutorial/pycon.py) into it. You do not need to understand the code - this is just an example to show how we can package our code.
-2. Run the command `uv sync` in the same terminal window you used to run `uv init --lib`. You should get a few lines of output, among them the line `Creating virtual environment at: .venv`.
+2. Run the command `uv sync` in the same terminal window you used to run `uv init --package`. You should get a few lines of output, among them the line `Creating virtual environment at: .venv`.
 3. Run the file you created by typing `uv run python src/{{package_name}}/pycon.py` in your terminal emulator (replace `{{package name}}` with the name of your package). What happened?
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
