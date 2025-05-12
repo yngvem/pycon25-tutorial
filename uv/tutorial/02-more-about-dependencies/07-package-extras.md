@@ -10,7 +10,7 @@ While package extras are meant to add optional dependencies to your projects, th
 2. Try to run the `get_charlas.py` script again. Did anything change?
 2. Sync the uv environment again with `uv sync`.
 3. Run the `get_charlas.py` script again. Did you still get the nice colours?
-4. Install the package with the `dev`-extras again by writing `uv sync --extra pretty`
+4. Install the package with the `pretty`-extras again by writing `uv sync --extra pretty`
 5. Run the `get_charlas.py` script again to check that you got the nice colours back.
 6. When do you think it makes sense to use optional dependencies?
 

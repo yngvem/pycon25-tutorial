@@ -16,12 +16,15 @@ However, you don't need to worry about that at all, because uv takes care of cre
 > [!NOTE]
 > You may need to replace python here with either py (Windows) or python3 (Linux and Mac)
 
-1. Run `python -c "import sys; print(sys.executable)"` in a terminal emulator (cmd or powershell) to see which Python executable Windows uses by default (the first result).
+> [!NOTE]
+> If you're using the integrated terminal in VSCode, PyCharm or another "smart" code editor, then you may not see the system Python executable in exercise 1. and 6.
+
+1. Run `python -c "import sys; print(sys.executable)"` in a terminal emulator (cmd or powershell) to see which Python executable your system uses by default (the first result).
 2. Run `uv run python -c "import sys; print(sys.executable)"` to see which Python executable uv uses by default in your project. Is there any difference?
 3. Activate the virtual environment by running `.venv\Scripts\activate` (Windows) or `source .venv/bin/activate` (Linux/Mac OS)
-4. Run `python -c "import sys; print(sys.executable)"` to see which Python executable Windows now uses by default
+4. Run `python -c "import sys; print(sys.executable)"` to see which Python executable your system now uses by default
 5. Deactivate the virtual environment by running `deactivate`
-6. Run `python -c "import sys; print(sys.executable)"` to see which Python executable Windows now uses by default
+6. Run `python -c "import sys; print(sys.executable)"` to see which Python executable your system now uses by default
 7. Discuss with your neighbour: What are the benefits of using a different virtual environment for each project compared to using just one large environment for everything?
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />

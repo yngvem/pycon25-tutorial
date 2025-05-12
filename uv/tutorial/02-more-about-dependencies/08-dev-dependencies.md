@@ -8,7 +8,7 @@ If you haven't updated uv since then, then you can still use development depende
 ## Exercises
 1. Use `uv add --dev pytest` to add pytest as a development dependency.
 2. Open the `pyproject.toml`-file and locate the lines regarding the normal dependencies, optional dependencies and the development dependencies. Why is one of the sections in the `pyproject.toml` named `[dependency-groups]` while the other parts start with `[project]` or `[project.optional-dependencies]`?
-3. Delete the lines related to the `pytest` normal dependencies, but NOT the development dependency group and run `uv sync --extras pretty` again. Did anything change in your environment?
+3. Delete the lines related to the `pytest` normal dependencies, but NOT the development dependency group and run `uv sync --extra pretty` (or, if you skipped the package extras exercises, `uv sync`) again. Did anything change in your environment?
 4. Discuss with your neighbour: When do you think you should use development dependencies, and when do you think you should use optional dependencies?
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />

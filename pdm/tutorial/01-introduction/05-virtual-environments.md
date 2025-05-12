@@ -17,6 +17,9 @@ However, you don't need to worry about that at all, because PDM takes care of cr
 > [!NOTE]
 > You may need to replace python here with either py (Windows) or python3 (Linux and Mac)
 
+> [!NOTE]
+> If you're using the integrated terminal in VSCode, PyCharm or another "smart" code editor, then you may not see the system Python executable in exercise 1. and 6.
+
 1. Run `python -c "import sys; print(sys.executable)"` in a terminal emulator (cmd or powershell) to see which Python executable Windows uses by default (the first result).
 2. Run `pdm run python -c "import sys; print(sys.executable)"` to see which Python executable PDM uses by default. Is there any difference?
 3. Activate the virtual environment by running `.venv\Scripts\activate` (Windows) or `.venv\bin\activate` (Linux/Mac OS)

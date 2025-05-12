@@ -35,7 +35,7 @@ Before we move on, we can make a little script to check if we can install our li
 
 ## Exercises
 
-1. Create a new folder in your project root (i.e. outside of `src`) called `scripts`, and create a new file `get_charlas.py` into it. Copy the contents of [`code/packaging-tutorial/get_charlas.py`](../../code/packaging-tutorial/scripts/get_charlas.py) into it (you may need to modify the `import packaging_tutorial.pycon`-import, replacing `packaging_tutorial` with the name of the directory inside `src`) and run it. What did it do?
+1. Create a new folder in your project root (i.e. outside of `src`) called `scripts`, and create a new file `get_charlas.py` into it. Copy the contents of [`code/packaging-tutorial/scripts/get_charlas.py`](../../code/packaging-tutorial/scripts/get_charlas.py) into it (you may need to modify the `import packaging_tutorial.pycon`-import, replacing `packaging_tutorial` with the name of the directory inside `src`) and run it. What did it do?
 2. Discuss with your neighbour: why do you think the import in the `get_charlas.py`-script worked?
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
