@@ -8,27 +8,21 @@ Specifically, we'll add a Python module that fetches the PyCon US programme, par
 1. Create a file `pycon.py` in the `src/{{package name}}` directory (replace `package name` with the name of your package) and copy the contents of [`code/packaging-tutorial/src/packaging_tutorial/pycon.py`](../../code/packaging-tutorial/src/packaging_tutorial/pycon.py) into it. You do not need to understand the code - this is just an example to show how we can package our code.
 2. Run the command `uv sync` in the same terminal window you used to run `uv init --package`. You should get a few lines of output, among them the line `Creating virtual environment at: .venv`.
 3. Run the file you created by typing `uv run python src/{{package_name}}/pycon.py` in your terminal emulator (replace `{{package name}}` with the name of your package). What happened?
+4. Add httpx as a dependency to your project by running `uv add httpx`
+5. Open the `pyproject.toml` file. Can you find httpx anywhere in that file?
+6. Try to run the `pycon.py` file again
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
 ## Reflection
 
-When we tried to run the script above, we got an `ImportError` because we hadn't installed HTTPX first.
+When first we tried to run the Python file above, we got an `ImportError` because we hadn't installed HTTPX first.
 This is great since we want to have full control over what packages we need to install to run our code.
 Otherwise, it would be very difficult for others to use it!
 We should have all this information about what we need to run our code in the `pyproject.toml`-file and let uv take care of installing and managing the dependencies.
 We could manually add the dependencies to the `pyproject.toml`-file.
-However, uv has a handy way to add dependencies and install them simultaneously: `uv add`.
-
-## Exercises
-1. Add httpx as a dependency to your project by running `uv add httpx`
-2. Open the `pyproject.toml` file. Can you find httpx anywhere in that file?
-3. Try to run the `pycon.py` file again
-
-<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
-
-## Reflection
-When you ran `uv add httpx`, three things happened: uv checked if you could add HTTPX as a dependency, then it updated the `pyproject.toml` file before it installed HTTPX in the virtual environment for your project.
+However, instead, we used uv's handy command for adding dependencies and installing dependencies at the same time: `uv add`.
+In fact, when you ran `uv add httpx`, three things happened: uv checked if you could add HTTPX as a dependency, then it updated the `pyproject.toml` file before it installed HTTPX in the virtual environment for your project.
 You could do all of this manually as well.
 
 Before we move on, we can make a little script to check if we can install our library.
