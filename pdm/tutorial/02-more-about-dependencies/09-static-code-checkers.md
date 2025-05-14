@@ -15,8 +15,8 @@ However, these days, the main tool to use is [Ruff](https://astral.sh/ruff), whi
 [tool.ruff.lint]
 select = ["I"]
 ```
-3. Run `pdm run ruff check --fix .` and look at your code file. What changed? What do you think will happen if you run `pdm run ruff check` again?
-4. Run `pdm run ruff format .` and look at your code file. How is the `format` argument different from the `check` argument?
+3. Run `pdm run ruff check --fix .` and look at your `tests/test_pycon.py` file. What changed? What do you think will happen if you run `pdm run ruff check` again?
+4. Run `pdm run ruff format .` and look at your `tests/test_pycon.py` file. How is the `format` argument different from the `check` argument?
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 

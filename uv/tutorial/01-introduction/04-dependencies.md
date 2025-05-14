@@ -40,6 +40,8 @@ The reason the import in the `get_charlas.py`-script worked was that when we ran
 This means we can import the code as any other package you have installed!
 Importantly, when you set up a project with uv, it is installed in a way so any change in `src/{{package_name}}` is automatically included in the imported code.
 This is called an *editable install*, and the process was standardised in [PEP 660](https://peps.python.org/pep-0660/) and is described well in the [Setuptools documentation](https://setuptools.pypa.io/en/latest/userguide/development_mode.html).
+Another way to accomplish more or less the same as running `uv sync` is therefore to run `pip install -e .`.
+However, the benefit of using uv is that you always know that you are working with the correct environment, and you also get the lock file (more about theset things later).
 
 Now that we have tested that we can import our code, we are ready to add a couple of dependencies and improve it a little bit further.
 

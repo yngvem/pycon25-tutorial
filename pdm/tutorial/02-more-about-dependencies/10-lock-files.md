@@ -8,6 +8,7 @@ The task of finding compatible set of dependencies, given the project requiremen
 2. The `pdm.lock`-file contains many dependencies that you haven't explicitly added with `pdm add`. Why do you think this is?
 3. Run `pdm export -o requirements.txt` and inspect the contents of the `requirements.txt`. What do you think it contains?
 4. Delete the `requirements.txt`-file
+5. Run `pdm list --tree` and inspect the terminal output. What does this represent?
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
@@ -21,13 +22,7 @@ In fact, a very common type of lock file used to be the `requirements.txt`-file 
 While this was commonly found before, we have more modern standards these days so we don't really need to use it anymore.
 Still, it's useful to be aware that a `requirements.txt`-file can function as an absolutely minimal lock file.
 
-## Exercises
-1. Run `pdm list --tree` and inspect the terminal output. What does this represent?
-
-<img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
-
-## Reflection
-While the lock file is useful for keeping a record of the dependencies, it is not meant for human consumption.
+Finally, we saw that while the lock file is useful for keeping a record of the dependencies, it is not meant for human consumption.
 Rather, if you want to inspect the dependencies of a project, then you should probably look at a visual representation of the dependency tree.
 
 ## Note: Upcoming standard

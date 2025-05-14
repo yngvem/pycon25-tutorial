@@ -13,10 +13,10 @@ While this can be very useful in certain circumstances, building such packages a
 However, if you are interested in making extension modules, then you can still use uv -- you just need to set the correct build backend.
 Here are some resources for further reading about building extension modules for Python:
 
- - [The Python Packaging User Guide's recommendations on build systems](https://packaging.python.org/en/latest/guides/tool-recommendations/#build-backends)
- - [The Meson build system for C, C++, Fortran, etc.](https://mesonbuild.com/meson-python/)
-    - Meson is, for example, used to build [NumPy](https://numpy.org) and [SciPy](https://scipy.org).
- - [Scikit-build-core (wrapping CMake projects for Python)](https://scikit-build-core.readthedocs.io/en/latest/)
- - [Maturin](https://www.maturin.rs) and [PyO3](https://github.com/PyO3/pyo3) for extension modules written in Rust.
-    - Maturin is, for example, used to build [Pydantic](https://docs.pydantic.dev/latest/).
- - [PyOpenSci's quick introduction to extension modules](https://www.pyopensci.org/python-package-guide/package-structure-code/complex-python-package-builds.html)
+ - [The Python Packaging User Guide's recommendations on build systems](https://packaging.python.org/en/latest/guides/tool-recommendations/#build-backends)
+ - [The Meson build system for C, C++, Fortran, etc.](https://mesonbuild.com/meson-python/)
+    - Meson is, for example, used to build [NumPy](https://numpy.org) and [SciPy](https://scipy.org).
+ - [Scikit-build-core (wrapping CMake projects for Python)](https://scikit-build-core.readthedocs.io/en/latest/)
+ - [Maturin](https://www.maturin.rs) and [PyO3](https://github.com/PyO3/pyo3) for extension modules written in Rust.
+    - Maturin is, for example, used to build [Pydantic](https://docs.pydantic.dev/latest/).
+ - [PyOpenSci's quick introduction to extension modules](https://www.pyopensci.org/python-package-guide/package-structure-code/complex-python-package-builds.html)

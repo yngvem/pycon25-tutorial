@@ -8,7 +8,7 @@ If you haven't updated PDM since then, then you can still use development depend
 ## Exercises
 1. Use `pdm add --dev pytest` to add pytest as a development dependency.
 2. Open the `pyproject.toml`-file and locate the lines regarding the `dev` optional dependencies and the development dependencies. Why is one of the sections in the `pyproject.toml` named `[dependency-groups]` while the other parts start with `[project]` or `[project.optional-dependencies]`?
-3. Delete the lines related to the `dev` optional dependencies, but NOT the development dependency group and run `pdm install` again. Did anything change in your environment?
+3. Delete the lines related to the `dev` optional dependencies, but NOT the development dependency group and run `pdm install` again. Do you think pytest is installed still? Why or why not?
 4. Discuss with your neighbour: When do you think you should use development dependencies, and when do you think you should use optional dependencies?
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
@@ -22,11 +22,11 @@ For example, we may want a particular version of pytest for our code, but we don
 
 This table summarises when to use the different types of dependencies.
 
-| Dependency type | Placement                                    | Description                                 |
+| Dependency type | Placement                                    | Description                                 |
 |-----------------|----------------------------------------------|---------------------------------------------|
-| Mandatory       | `project.dependencies`                       | Minimal dependencies for using your code    |
-| Optional        | `project.optional-dependencies.{group_name}` | Special features/platforms                  |
-| Development     | `dependency-groups.{group_name}`             | Developing the code, but not for running it |
+| Mandatory       | `project.dependencies`                       | Minimal dependencies for using your code    |
+| Optional        | `project.optional-dependencies.{group_name}` | Special features/platforms                  |
+| Development     | `dependency-groups.{group_name}`             | Developing the code, but not for running it |
 
 ## Exercises
 1. Use `pdm add --dev pytest-cov pytest-randomly` to add [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/) and [pytest-randomly](https://pypi.org/project/pytest-randomly/)

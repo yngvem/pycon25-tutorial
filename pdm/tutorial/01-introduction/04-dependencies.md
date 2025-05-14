@@ -39,6 +39,8 @@ The reason the import in the `get_charlas.py`-script worked was that when we ran
 This means we can import the code as any other package you have installed!
 Importantly, when you set up a project with pdm, it is installed in a way so any change in `src/{{package_name}}` is automatically included in the imported code.
 This is called an *editable install*, and the process was standardised in [PEP 660](https://peps.python.org/pep-0660/) and is described well in the [Setuptools documentation](https://setuptools.pypa.io/en/latest/userguide/development_mode.html).
+Another way to accomplish more or less the same as running `pdm install` is therefore to run `pip install -e .`.
+However, the benefit of using PDM is that you always know that you are working with the correct environment, and you also get the lock file (more about theset things later).
 
 Now that we have tested that we can import our code, we are ready to add a couple of dependencies and improve it a little bit further.
 
@@ -60,17 +62,17 @@ Note that PDM will try to add the latest version of a given dependency that is c
 
 # Optional reading: Dependency compatibility
 
-## Exercises
+## Bonus: Exercises
 
 1. Remove the `pydantic` dependency by running `uv remove pydantic`
 2. Use whichever method you prefer to add dependencies to your project and try to add and install the following two dependencies (remember the versions!):
 
-    * `"pydantic<2"`
-    * `"pydantic-settings==2.1.0"`
+    * `"pydantic<2"`
+    * `"pydantic-settings==2.1.0"`
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
-## Reflection
+## Bonus: Reflection
 As you may have noticed, PDM spent a while saying `⠙ Resolving dependencies` before saying
 
 ```raw
@@ -94,14 +96,14 @@ So when you tried to run `"pdm add pydantic<2" "pydantic-settings>=1"`, PDM trie
 This was not possible for `"pydantic-settings>=1"` and `"pydantic<2"`.
 Luckily though, we don't rely on any outdated Pydantic features, so we can upgrade to Pydantic 2
 
-## Exercises
+## Bonus: Exercises
 1. Remove the pydantic and pydantic-settings dependencies from the `pyproject.toml` file. Add them again by typing `pdm add pydantic pydantic-settings`.
 2. Replace the code in your `pycon.py`-file with the code from the [`code/packaging-tutorial/src/packaging_tutorial/validated_pycon_with_config.py`](../../code/packaging-tutorial/src/packaging_tutorial/validated_pycon_with_config.py). How does this file differ from the original `pycon.py`-file?
 3. Test that the code works by running the `get_charlas`-script with `pdm run python scripts/get_charlas.py`
 
 <img src="../../../assets/post_it_yellow.svg" alt="Illustration of a pink post it note" width="50px" />
 
-## Reflection
+## Bonus: Reflection
 
 The easiest way to resolve dependency problems is to try to delete all of your clashing dependencies and add them again.
 This can work because PDM will try to find the latest compatible version of your dependencies.
@@ -113,7 +115,7 @@ Dependency compatibility is tricky business.
 Generally, you want your *applications* to have completely fixed versions in the listed dependencies and your *libraries* to have as unconstrained versions as possible in the listed dependencies.
 The reason for this difference is that we we want full control over the libraries we use in applications we develop (e.g. to avoid supply chain attacks) but we don't want to mandate which versions consumers of our libraries should use.
 Managing versions is easier for dependencies that strictly adhers to [*semantic versioning (semver)*](https://semver.org/).
-In those cases, you can change the dependencies in the `pyproject.toml`-file from `library==X.Y.Z` to `library>=X.Y,<X+1` (e.g. `httpx>=0.26,<1`).
+TODO: TENK In those cases, you can change the dependencies in the `pyproject.toml`-file from `library==X.Y.Z` to `library>=X.Y,<X+1` (e.g. `httpx>=0.26,<1`).
 However, strictly adhering to semver is difficult, and most libraries don't do this.
 In this case, you can just removethe version pin altogether in the dependency list (or use `>=`-pins).
 For example, you may use `httpx` or `httpx>=0.26.0` instead of `httpx==0.26.0`.

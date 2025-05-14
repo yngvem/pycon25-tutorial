@@ -43,7 +43,7 @@ This means that it's much easier to install wheels than source distributions, an
 
 The build backend is the tool that actually creates the wheel and source distribution.
 What we just did was switching out the build backend to use [Setuptools](https://setuptools.pypa.io/en/latest/setuptools.html) instead of Hatchling, the buildsystem made for [Hatch](https://hatch.pypa.io/).
-This means that instead of calling `hatchling.build.build_wheel('dist/')` and `hatchling.build.build_sdist('dist/')` to create the wheel and source distribution, uv called `setuptools.build_meta.build_wheel('dist/')` and `setuptools.build_meta.build_wheel('dist/')` when you ran `uv build`.
+This means that instead of calling `hatchling.build.build_wheel('dist/')` and `hatchling.build.build_sdist('dist/')` to create the wheel and source distribution, uv called `setuptools.build_meta.build_wheel('dist/')` and `setuptools.build_meta.build_sdist('dist/')` when you ran `uv build`.
 This might seem complicated, but luckily, unless you have good reasons, it doesn't really matter if you choose Hatchling, Setuptools or PDM as the build backend.
 Still, there are differences, but you can switch the build backend when you find a reason to.
 Until then, just stick with the defaults.

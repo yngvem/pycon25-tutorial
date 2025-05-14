@@ -35,11 +35,11 @@ If you're familiar with apt or homebrew, then you can think of `uv tool` kind of
 1. Why do you think pre-commit doesn't automatically stage fixes as well?
 2. Open the `.pre-commit-config.yaml`-file and add the following lines:
 ```
--   repo: https://github.com/astral-sh/ruff-pre-commit
+-   repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.11.6
     hooks:
     -   id: ruff
-    args: [ --fix ]
+        args: [ --fix ]
     -   id: ruff-format
 ```
 3. Stage and commit the updated `.pre-commit-config.yaml`-file.
@@ -51,7 +51,7 @@ def print_future_sessions() -> None:
     sessions = get_sessions(
     )
     for session in sessions:
-        print( session,  session.start )
+        print( session,  session.start )
 ```
 6. Stage and commit the updated `pycon.py`-file. Did it pass the pre-commit hooks?
 7. Stage the fixed file and commit again

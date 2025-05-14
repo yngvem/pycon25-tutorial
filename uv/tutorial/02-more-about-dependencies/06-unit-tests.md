@@ -27,7 +27,7 @@ def test_get_future_sessions() -> None:
     assert list(pycon.get_future_sessions(sessions, now=now)) == future_sessions
 ```
 
-We will not go into details on testing in this tutorial, but if you're interested, then Ned Batchelder  (who, among other things, maintains [coverage.py](https://coverage.readthedocs.io/)) had a presentation about testing with the [materials online](https://nedbatchelder.com/text/test3.html) and we've heard good things about Brian Okken's [tutorials](https://courses.pythontest.com).
+We will not go into details on testing in this tutorial, but if you're interested, then Ned Batchelder  (who, among other things, maintains [coverage.py](https://coverage.readthedocs.io/)) had a presentation about testing with the [materials online](https://nedbatchelder.com/text/test3.html) and we've heard good things about Brian Okken's [tutorials](https://courses.pythontest.com).
 Still, we will need some tests to get through the entire packaging process.
 
 ## Exercises
@@ -48,6 +48,11 @@ Also, the tests may require dependencies that the package doesn't need, such as 
 We need pytest to run the tests, but not to use our library.
 Isn't it then kind of odd to add pytest as a dependency, when it's only required for the tests?
 It is, and instead of using a normal dependency, we should use *optional dependencies* or *development dependencies*.
+
+Finally, notice that we also included a `__init__.py`-file. While not strictly neccessary, it can be nice.
+The reason it can be nice is that it opens for *relative imports* within the tests directory, and it can be nice to use relative imports within the tests directory (despite relative imports' [weaknesseses](https://softwareengineering.stackexchange.com/a/159505)).
+The reason for this is that if you for example have some test utilities that you import through `import test.utils`, then you are dependent on having the correct working directory when you invoke pytest.
+If you instead use `from .utils`, then it will work irrespectively of where you run the tests from.
 
 ## Next up
 [Optional dependencies and package extras](./07-package-extras.md)
